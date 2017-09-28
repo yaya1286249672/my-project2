@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>my-project</title>
+    <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css">
+  </head>
+  <style>
+    html,body{
+      width:100%;height:100%;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    let html = document.documentElement;
+    window.rem = html.getBoundingClientRect().width / 25 ;
+    html.style.fontSize = window.rem + 'px';
+  </script>
+  <script src="https://unpkg.com/mint-ui/lib/index.js"></script>
+</html>
