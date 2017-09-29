@@ -12,6 +12,8 @@
         <div>
           哈哈
           <button @click="logout">退出</button>
+          <router-link to="/index/postdemo">echarts案例</router-link>
+          <router-view></router-view>
           <!--<v-postdemo></v-postdemo>-->
         </div>
       </mt-tab-container-item>

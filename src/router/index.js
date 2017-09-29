@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Mint from 'mint-ui'
 import Login from '@/views/Login'
+import Postdemo from '@/views/postdemo'
 import Index from '@/views/Index'
 
 Vue.use(Router)
@@ -16,7 +17,13 @@ export default new Router({
     {
       path: '/index',
       name: 'Index',
-      component: Index
+      component: Index,
+      children: [
+        {
+          path: '/index/postdemo',
+          component: Postdemo
+        }
+      ]
     },
     {
       path: '/login',
