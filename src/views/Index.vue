@@ -30,7 +30,7 @@
         <mt-cell v-for="n in 7" title="tab-container 5"></mt-cell>
       </mt-tab-container-item>
     </mt-tab-container>
-    <mt-tabbar v-model="selected">
+    <mt-tabbar v-model="selected" fixed>
       <mt-tab-item id="outsale">
         <img slot="icon" src="../assets/logo.png">
         首页
@@ -74,5 +74,8 @@
     width: 100%;
     text-align: center;
   }
+  /*#wmaincontainer{
+    width:100%
+  }*/
 </style>
 

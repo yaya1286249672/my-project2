@@ -4,7 +4,7 @@
         <button @click.stop = "clickbtn()">
                 点我呀
         </button>
-        <div id = "echarts-chord-chart" style = "width:100%;height:300px"></div>
+        <div id = "echarts-chord-chart" style = "width:100%;height:800px"></div>
     </div>
 </template>
 <script>
