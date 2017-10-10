@@ -7,7 +7,7 @@
       <mt-button icon="" slot="right" @click="logout">退出</mt-button>
     </mt-header>
     <!--<h3>热烈欢迎王娅同学来到神殿！</h3>-->
-    <mt-tab-container v-model="selected">
+    <mt-tab-container v-model="selected" id = "wmaincontainer">
       <mt-tab-container-item id="outsale">
         <div>
           哈哈
