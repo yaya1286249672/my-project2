@@ -103,10 +103,10 @@
       //点击切换样式
       acBtag (event) {
         var e = event || window.event;
-        $(e.currentTarget).addClass("botActive").siblings().removeClass("botActive");
-        var divTxt = e.currentTarget;
         console.log(e.currentTarget);
-        this.title = e.srcElement.innerText;
+        $(e.currentTarget).addClass("botActive").siblings().removeClass("botActive");
+        var divTxt = e.currentTarget.childNodes[0].childNodes[2].innerHTML;
+        this.title = divTxt;
       }
     }
   }
@@ -126,6 +126,6 @@
   .tabbottom .botItem{flex-grow:1;}
   .botItem a{display: block;width:100%;height:100%;color:#fff}
   .botActive{background:#000;}
-  .mainCon{width:100%;height:auto;}
+  .mainCon{width:100%;height:auto;position: fixed;top:48px;left:0;}
 </style>
 
