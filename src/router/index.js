@@ -2,13 +2,19 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Mint from 'mint-ui'
 import Login from '@/views/Login'
-import Postdemo from '@/views/postdemo'
+// import Postdemo from '@/views/postdemo'
 import Index from '@/views/Index'
+import Home from '@/components/Home'
+import Sort from '@/components/Sort'
+import Find from '@/components/Find'
+import Mine from '@/components/Mine'
 
 Vue.use(Router)
 Vue.use(Mint)
 
 export default new Router({
+  mode: 'history',
+  base: __dirname,
   routes: [
     {
       path: '*',
@@ -20,8 +26,20 @@ export default new Router({
       component: Index,
       children: [
         {
-          path: '/index/postdemo',
-          component: Postdemo
+          path: '/index/home',
+          component: Home
+        },
+        {
+          path: '/index/sort',
+          component: Sort
+        },
+        {
+          path: '/index/find',
+          component: Find
+        },
+        {
+          path: '/index/mine',
+          component: Mine
         }
       ]
     },

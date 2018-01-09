@@ -15,8 +15,13 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "css-loader": "^0.28.8",
+    "jquery": "^2.2.3",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
     "mint-ui": "^2.2.9",
     "vue": "^2.4.2",
+    "vue-awesome-swiper": "^3.1.0",
     "vue-router": "^2.7.0"
   },
   "devDependencies": {
