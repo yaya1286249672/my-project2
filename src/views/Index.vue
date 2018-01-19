@@ -89,10 +89,25 @@
   export default{
     data () {
       return {
-        title: '首页',
+        title: '',
         selected: 'outsale',
         active: 'outsale'
       }
+    },
+    watch:{
+      $route(){
+        var pathTitle = this.$route.path;
+        if(pathTitle == '/index/find'){
+          this.title = '发现';
+        }else if(pathTitle == '/index/sort'){
+          this.title = '分类';
+        }else if(pathTitle == '/index/home'){
+          this.title = '首页';
+        }else if(pathTitle == '/index/mine'){
+          this.title = '我的';
+        }
+      }
+
     },
     methods: {
         //退出
@@ -105,8 +120,8 @@
         var e = event || window.event;
         console.log(e.currentTarget);
         $(e.currentTarget).addClass("botActive").siblings().removeClass("botActive");
-        var divTxt = e.currentTarget.childNodes[0].childNodes[2].innerHTML;
-        this.title = divTxt;
+        /*var divTxt = e.currentTarget.childNodes[0].childNodes[2].innerHTML;
+        this.title = divTxt;*/
       }
     }
   }
