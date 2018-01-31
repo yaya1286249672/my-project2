@@ -5,6 +5,7 @@ import Login from '@/views/Login'
 import Index from '@/views/Index'
 import Home from '@/components/Home'
 import Sort from '@/components/Sort'
+import Detail from '@/components/detail'
 import Find from '@/components/Find'
 import Mine from '@/components/Mine'
 
@@ -35,6 +36,10 @@ export default new Router({
         {
           path: '/index/find',
           component: Find
+        },
+        {
+          path:'/detail',
+          component:Detail
         },
         {
           path: '/index/mine',
